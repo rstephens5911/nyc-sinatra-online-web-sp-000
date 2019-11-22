@@ -21,7 +21,7 @@ class LandmarksController < ApplicationController
 
   get '/landmarks' do
     @landmarks = Landmark.all
-    erb :'landmarks/all'
+    erb :'landmarks/index'
   end
 
   patch '/landmarks/:id' do
